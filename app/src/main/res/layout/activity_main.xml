@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_albion_inventory_straight"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/backpackPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/helmetPicture" />
+
+    <ImageView
+        android:id="@+id/helmetPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/capePicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/helmetPicture"/>
+
+    <ImageView
+        android:id="@+id/mainhandPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/backpackPicture"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/armorPicture"/>
+
+    <ImageView
+        android:id="@+id/armorPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/helmetPicture"/>
+
+    <ImageView
+        android:id="@+id/offhandPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/armorPicture"
+        android:layout_below="@id/capePicture"/>
+
+    <ImageView
+        android:id="@+id/foodPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/mainhandPicture"
+        android:layout_toLeftOf="@id/footwearPicture"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/footwearPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/armorPicture"/>
+
+    <ImageView
+        android:id="@+id/potionPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/footwearPicture"
+        android:layout_below="@id/offhandPicture"/>
+
+
+
+    <TextView
+        android:id="@+id/letsRollTextView"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/foodPicture"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="50dp"
+        android:text="Lock:"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/headgearSwitch"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_below="@id/letsRollTextView"
+        android:layout_marginLeft="50dp"
+        android:text="helmet"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/chestgearSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headgearSwitch"
+        android:layout_marginLeft="50dp"
+        android:text="armor"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/feetgearSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chestgearSwitch"
+        android:layout_marginLeft="50dp"
+        android:text="boots"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/weaponSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/headgearSwitch"
+        android:layout_below="@id/letsRollTextView"
+        android:text="weapon"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/offhandSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chestgearSwitch"
+        android:layout_below="@id/weaponSwitch"
+        android:text="offhand"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/capeSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offhandSwitch"
+        android:layout_toRightOf="@id/feetgearSwitch"
+        android:text="cape"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/foodSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/letsRollTextView"
+        android:layout_toRightOf="@id/weaponSwitch"
+        android:text="food"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/potionSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weaponSwitch"
+        android:layout_toRightOf="@id/offhandSwitch"
+        android:text="potion"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/bagSwitch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/potionSwitch"
+        android:layout_toRightOf="@id/capeSwitch"
+        android:text="bag"
+        android:clickable="false"
+        android:checked="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/gearDescriptionTextView"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/footwearPicture"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/drawGearButton"
+        android:text="DRAW GEAR"
+        android:textSize="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="675dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/appStartButton"
+        android:text="App Start"
+        android:textSize="7dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="600dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
